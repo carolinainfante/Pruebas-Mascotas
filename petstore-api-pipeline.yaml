@@ -5,19 +5,24 @@ Parameters:
 
   GitHubRepositoryName:
     Type: String
+    Default: aws-codepipeline-codebuild-with-postman
     Description: GitHub repository name.
     MinLength: 1
     MaxLength: 100
   GitHubUser:
     Type: String
+    Default: carolinainfante
   GitHubBranch:
     Type: String
+    Default: main
   GitHubToken:
     Type: String
+    Default: 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
     Description: repository token.
     NoEcho: true
   BucketRoot:
     Type: String
+    Default: pruebas-funcionales-poc
     Description: bucket containing project artifacts e.g. postman config files, etc.
     MinLength: 1
     MaxLength: 100
